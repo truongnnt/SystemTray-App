@@ -54,6 +54,7 @@
 
 #include <QMessageBox>
 #include "MainWindow.h"
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
@@ -68,7 +69,7 @@ int main(int argc, char *argv[])
         return 1;
     }
     QApplication::setQuitOnLastWindowClosed(false);
-
+    qDebug() << "Test update git";
     Window window;
     window.show();
     return app.exec();
